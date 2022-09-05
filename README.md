@@ -15,4 +15,7 @@ The evaluation metric for this competition is Intersection-over-Union (IoU - mor
 
 You must specify the extent of the bounding box as shown in the sample submission file, specifying x, y, width and height as floats between 0 and 1 (fractions of the image extent). The bounding box coordinates in pixels are:
 
-<img src="https://latex.codecogs.com/gif.latex?x_1, y_1, x_2, y_2 = (x.image_width), (y.image_height), ((x+w).image_width), ((y+h).image_height)" />
+```
+  x1, y1, x2, y2 = (x*image_width), (y*image_height), ((x+w)*image_width), ((y+h)*image_height)
+
+```
