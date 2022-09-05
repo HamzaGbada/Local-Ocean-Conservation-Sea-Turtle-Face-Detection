@@ -7,4 +7,12 @@ Local Ocean Conservation (LOC) would like to use the unique fingerprint of turtl
 
 The goal of this competition is to develop an algorithm or model that can take in an image of a sea turtle and output the position of a bounding box around that all-important scale pattern. A labelled training set with bounding box annotations has been provided.
 
-For more information about the competition check this [link](https://zindi.africa/competitions/local-ocean-conservation-sea-turtle-face-detection)
+Competition was run by [Zindi](https://zindi.africa/) on their platform ([competition link](https://zindi.africa/competitions/local-ocean-conservation-sea-turtle-face-detection))
+
+## Evaluation
+
+The evaluation metric for this competition is Intersection-over-Union (IoU - more information on this metric in this article: [IoU](https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/))
+
+You must specify the extent of the bounding box as shown in the sample submission file, specifying x, y, width and height as floats between 0 and 1 (fractions of the image extent). The bounding box coordinates in pixels are:
+
+<img src="https://latex.codecogs.com/gif.latex?x_1, y_1, x_2, y_2 = (x.image_width), (y.image_height), ((x+w).image_width), ((y+h).image_height)" />
